@@ -74,12 +74,7 @@ export const notifySubscribers = async (blog) => {
     }
         </p>
       
-      // <div style="text-align: center; margin: 30px 0;">
-      //   <a href="${process.env.FRONTEND_URL}/blog/${blog._id}" 
-      //       style="display: inline-block; background: #007bff; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px;">
-      //     Read Full Article
-      //   </a>
-      // </div>
+        visit our website for more blogs
         
         <p style="font-size: 12px; color: #999;">
           Category: ${blog.category} | You're subscribed to our blog updates.
