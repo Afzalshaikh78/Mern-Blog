@@ -59,33 +59,33 @@ export const notifySubscribers = async (blog) => {
     );
 
     const subject = `📰 New Blog: ${blog.title}`;
-    const html = `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-        <h2 style="color: #333;">${blog.title}</h2>
-        ${blog.subTitle ? `<h3 style="color: #666;">${blog.subTitle}</h3>` : ""}
-        
-        <img src="${blog.image}" alt="${
-      blog.title
-    }" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin-bottom: 15px;">
-        
-        <p style="color: #666; line-height: 1.6;">
-          ${blog.description.slice(0, 200)}${
-      blog.description.length > 200 ? "..." : ""
-    }
-        </p>
-        
-        <div style="text-align: center; margin: 30px 0;">
-          <a href="${process.env.FRONTEND_URL}/blog/${blog._id}" 
-             style="display: inline-block; background: #007bff; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px;">
-            Read Full Article
-          </a>
-        </div>
-        
-        <p style="font-size: 12px; color: #999;">
-          Category: ${blog.category} | You're subscribed to our blog updates.
-        </p>
-      </div>
-    `;
+  const html = `
+  <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+    <h2 style="color: #333;">${blog.title}</h2>
+    ${blog.subTitle ? `<h3 style="color: #666;">${blog.subTitle}</h3>` : ""}
+    
+    <img src="${blog.image}" alt="${
+    blog.title
+  }" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin-bottom: 15px;">
+    
+    <p style="color: #666; line-height: 1.6;">
+      ${blog.description.slice(0, 200)}${
+    blog.description.length > 200 ? "..." : ""
+  }
+    </p>
+    
+    <div style="text-align: center; margin: 30px 0;">
+      <a href="${process.env.FRONTEND_URL}/blog/${blog._id}" 
+         style="display: inline-block; background: #007bff; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        Click Here
+      </a>
+    </div>
+    
+    <p style="font-size: 12px; color: #999; text-align: center;">
+      Category: ${blog.category} | You're subscribed to our blog updates.
+    </p>
+  </div>
+`;
 
     console.log("📧 Email template prepared, starting to send emails...");
     console.log("🌐 FRONTEND_URL:", process.env.FRONTEND_URL);
