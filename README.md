@@ -4,7 +4,7 @@ A full-stack MERN (MongoDB, Express, React, Node) blog application — simple, e
 
 > NOTE: Adjust the commands and environment variables below to match the actual folder structure and scripts in this repository if they differ (for example, `server/` and `client/` directories).
 
-Live:https://mern-blog-flame.vercel.app
+Live :https://mern-blog-flame.vercel.app
 
 ## Table of Contents
 
