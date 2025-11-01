@@ -1,6 +1,6 @@
 # Mern-Blog
 
-A full-stack MERN (MongoDB, Express, React, Node) blog application — simple, extensible, and ready for development and deployment. This repository contains the backend API and the frontend React app to create, read, update, and delete blog posts, manage users and authentication, and handle file uploads (if enabled).
+A full-stack MERN (MongoDB, Express, React, Node) blog application simple, extensible, and ready for development and deployment. This repository contains the backend API and the frontend React app to create, read, update, and delete blog posts, manage users and authentication, and handle file uploads (if enabled).
 
 > NOTE: Adjust the commands and environment variables below to match the actual folder structure and scripts in this repository if they differ (for example, `server/` and `client/` directories).
 
